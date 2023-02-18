@@ -12,8 +12,8 @@ Input.addEventListener('keyup', (e)=>{
 
         try {
 
-
-             // Info_text.style.display="block"
+            Mean_con.style.display="none"
+             Info_text.style.display="block"
         Info_text.textContent=(`Searching the meaning of the ${word}`)
 
 
@@ -22,11 +22,24 @@ Input.addEventListener('keyup', (e)=>{
         const res= await fetch(url)
         const data= await res.json()
 
+        if(data.title){
+        
+            Title.innerHTML=word;
+            Meaning.innerHTML="N/A"
+        }else{
+           
+            
+            Title.innerHTML=(data[0].word)
+            Meaning.innerHTML=(data[0].meanings[0].definitions[0].definition)
+        }
+
         Mean_con.style.display="block"
         Info_text.style.display="none"
 
-        Title.textContent=(e.target.value)
+        Title.textContent=(data[0].word)
         Meaning.textContent=(data[0].meanings[0].definitions[0].definition)
+
+      
         
 
 
