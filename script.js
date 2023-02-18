@@ -58,8 +58,9 @@ Input.addEventListener('keyup', (e)=>{
 
 
         
-    if(e.target.value && e.key ==="Enter")
+    if(e.target.value && e.key == "Enter")
    fetchapi(e.target.value)
+   
 
    
 
