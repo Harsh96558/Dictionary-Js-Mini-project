@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background: linear-gradient(to left bottom, lightyellow,lightblue,lightyellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+
+
+}
+
+.container{
+    background-color: rgba(232, 155, 55, .1);
+    padding: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .4);
+    border-radius: 15px;
+    width: 60%;
+    /* height: 300px; */
+
+    text-align: center;
+    color: darkblue;
+}
+
+.heading{
+    font-size: 28px;
+    font-weight: 200;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, .3);
+    letter-spacing: 2px;
+}
+input{
+    padding: 5px 10px;
+    border-radius: 1px solid blue;
+    border-radius: 10px;
+    background-color: rgba(235, 255, 255, .6);
+}
+
+.meaning-container{
+    display: none;
+}
