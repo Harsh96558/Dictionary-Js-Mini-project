@@ -24,7 +24,7 @@ Input.addEventListener('keyup', (e)=>{
 
         if(data.title){
         
-            Title.innerHTML=word;
+            Title.innerHTML=e.target.value
             Meaning.innerHTML="N/A"
         }else{
            
@@ -36,7 +36,7 @@ Input.addEventListener('keyup', (e)=>{
         Mean_con.style.display="block"
         Info_text.style.display="none"
 
-        Title.textContent=(data[0].word)
+        Title.textContent=e.target.value
         Meaning.textContent=(data[0].meanings[0].definitions[0].definition)
 
       
@@ -47,21 +47,7 @@ Input.addEventListener('keyup', (e)=>{
         } catch (error) {
             console.log(error)
             
-        }
-
-        
-       
-
-
-        
-
- 
-
-
-
-
-        
-        
+        } 
         
     }
 
