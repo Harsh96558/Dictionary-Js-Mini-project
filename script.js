@@ -38,6 +38,7 @@ Input.addEventListener('keyup', (e)=>{
 
         Title.textContent=e.target.value
         Meaning.textContent=(data[0].meanings[0].definitions[0].definition)
+        
 
       
         
